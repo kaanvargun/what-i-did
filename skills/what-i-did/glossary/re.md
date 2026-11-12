@@ -1,0 +1,15 @@
+# tersine mühendislik
+- Tersine mühendislik | reverse engineer,tersine mühendis | Hazır bir programın nasıl çalıştığını kaynak kodu olmadan çözmek. | Saati söküp nasıl çalıştığını anlamak.
+- Binary (ikili dosya) | binary,.exe,.dll,.elf,.bin | Bilgisayarın doğrudan çalıştırdığı, insanın okuyamadığı derlenmiş dosya. | Pişmiş yemek: tarif artık görünmüyor.
+- Decompile | decompil | Derlenmiş koddan okunabilir koda geri çevirme; sonuç orijinal değil, tahmini yeniden kurulumdur. | Yemeği tadıp tarifini tahmin etmek.
+- Disassemble | disassembl,objdump,assembly | Makine kodunu işlemci komutlarına (assembly) çevirme. | Mors kodunu harf harf yazıya dökmek.
+- Ghidra / rizin / IDA | ghidra,rizin,radare,ida pro,cutter | Binary dosyaları açıp inceleyen tersine mühendislik programları. | Söküm masası ve büyüteç.
+- Electron | electron | Web teknolojisiyle yapılmış masaüstü uygulama çatısı (içinde Chromium var). | Masaüstü kılığına girmiş web sitesi.
+- asar | asar,.asar | Electron uygulamalarının dosyalarını topladığı arşiv. | Uygulamanın tek dosyalık valizi.
+- Minify / obfuscation | minif,.min.js,obfuscat | Kodu küçültme / bilerek okunmaz hale getirme. | Tarifi kısaltmak / şifreli yazmak.
+- Source map | .map,sourcemap | Küçültülmüş koddan orijinal satırlara giden harita. | Kısaltmaların açılım sözlüğü.
+- Patch (yama) | .patch,patched,yama | Programın küçük bir kısmını değiştirerek davranışını düzeltmek/değiştirmek. | Elbiseye yama dikmek.
+- Hex | hex dump,hexdump,hex editör | Verinin 16'lık sayılarla gösterimi; bayt düzeyi inceleme. | Dosyanın röntgeni.
+- Firmware | firmware | Cihazın içine gömülü temel yazılım. | Cihazın doğuştan gelen refleksleri.
+- CASC | casc | Blizzard oyunlarının dosyalarını sakladığı arşiv sistemi. | Oyunun dev depo raf sistemi.
+- Statik / dinamik analiz | statik analiz,dynamic analysis,runtime | Programı çalıştırmadan (statik) ya da çalışırken (dinamik) incelemek. | Arabayı garajda / yolda incelemek.

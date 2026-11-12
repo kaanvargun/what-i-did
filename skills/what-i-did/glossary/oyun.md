@@ -1,0 +1,12 @@
+# oyun
+- WebAssembly (wasm) | .wasm,webassembly | Tarayıcıda neredeyse makine hızında çalışan derlenmiş kod biçimi. | Tarayıcıya takılan turbo motor.
+- Emscripten | emscripten,emcc | C/C++ kodunu WebAssembly'ye çeviren derleyici. | Eski motoru yeni şasiye uyduran tamirci.
+- Canvas | canvas,getcontext | Sayfada JS ile piksel piksel çizim yapılan tuval. | Ressamın tuvali.
+- WebGL / WebGPU | webgl,webgpu,three.js | Ekran kartını kullanarak tarayıcıda 2B/3B çizim. | Tuvale fırça yerine püskürtme tabancası.
+- Oyun döngüsü | requestanimationframe,game loop,gameloop | Saniyede onlarca kez: girdi oku → güncelle → çiz. | Film şeridindeki kareler.
+- Asset (varlık) | asset,sprite,texture,.ogg | Oyunun resim, ses, model, harita dosyaları. | Tiyatronun dekor ve kostümleri.
+- Asset dönüştürme | .blp,.dds,ffmpeg,asset dönüştür | Oyun dosyalarını tarayıcının açabileceği biçime çevirme. | Eski kaseti MP3'e çevirmek.
+- Sprite / atlas | sprite,atlas | Karakter ve nesne görsellerinin tek resimde toplandığı sayfa. | Çıkartma albümünün tek sayfası.
+- Web Audio | audiocontext,webaudio | Tarayıcıda ses çalma ve karıştırma sistemi. | Sahnedeki ses masası.
+- Gamepad API | gamepad | Tarayıcının oyun kolunu tanıması. | Konsol kolunu bilgisayara tanıtmak.
+- Kayıt (save) | savegame,indexeddb | Oyun ilerlemesinin cihazda saklanması. | Oyundaki kayıt defteri.

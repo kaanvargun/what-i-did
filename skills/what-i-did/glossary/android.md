@@ -1,0 +1,16 @@
+# android
+- APK | .apk,.apks,.xapk | Android uygulamasının kurulum paketi (aslında bir zip). | Uygulamanın kargo kolisi.
+- AAB | .aab | Google Play'e yüklenen paket biçimi; cihaza göre APK'ya bölünür. | Toptan koli: mağaza perakende pakete böler.
+- dex | .dex,classes.dex | Android'in çalıştırdığı derlenmiş kod dosyası. | Makinenin anladığı dilde yazılmış talimat.
+- smali | smali,.smali | dex kodunun insanın okuyup düzenleyebileceği alt seviye hali. | Makine dilinin harf harf okunuşu.
+- apktool | apktool | APK'yı açıp smali/kaynaklara çeviren ve geri paketleyen araç. | Koliyi açıp tekrar bantlayan alet.
+- jadx | jadx | dex kodunu okunabilir Java'ya geri çeviren araç (yaklaşık). | Makine dilinden kabaca tercüme.
+- AndroidManifest | androidmanifest | Uygulamanın kimliği ve izinlerinin yazılı olduğu dosya. | Uygulamanın nüfus cüzdanı.
+- İmzalama | apksigner,jarsigner,keystore,.jks,v2 signature | APK'ya geliştiricinin dijital mührünü basmak; değişen APK yeniden imzalanmalı. | Mektubun mühürlü zarfı.
+- zipalign | zipalign | APK içini Android'in hızlı okuyacağı şekilde hizalama. | Raftaki kutuları düzgün dizmek.
+- adb | adb ,adb shell,adb install | Bilgisayardan telefona komut gönderme aracı. | Telefona kabloyla uzaktan kumanda.
+- Frida | frida | Çalışan uygulamanın içine kod sokup davranışını izleme/değiştirme aracı. | Çalışan makineye takılan dinleme cihazı.
+- Root / KernelSU / Magisk | kernelsu,magisk | Telefonda tam yönetici yetkisi açma yöntemleri. | Binanın ana anahtarını almak.
+- Native kütüphane (.so) | .so,lib/arm64 | Uygulamanın içindeki makine koduyla derlenmiş parçalar. | Fabrikadan mühürlü gelen motor parçası.
+- Paket adı | package=,applicationid | Uygulamanın benzersiz kimliği (com.firma.uygulama). | Uygulamanın T.C. kimlik numarası.
+- Gradle | gradle,build.gradle | Android projesini derleyip APK üreten araç. | Uygulama fabrikasının montaj bandı.

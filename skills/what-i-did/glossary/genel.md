@@ -1,0 +1,18 @@
+# genel — biçim: - terim | anahtarlar (.ext = uzantı, diğerleri metinde/dosya adında geçen ifade) | açıklama | benzetme
+- Claude Code | claude code,claude.md,.claude | Anthropic'in yapay zekâ kodlama asistanı; komutla dosya yazar, program çalıştırır. | Yanında çalışan, söyleneni yapan ama denetlenmesi gereken bir çırak.
+- Terminal / komut satırı | terminal,powershell,bash,.ps1,.sh | Programlara yazıyla komut verilen pencere. | Fare yerine yazıyla konuşulan kumanda paneli.
+- Betik (script) | .sh,.ps1,.mjs,.py,scripts/ | Sırayla çalışan komutlardan oluşan küçük program dosyası. | Yemek tarifi: adımlar yazılı, makine sırayla uygular.
+- Git / commit | .git,git log,git commit | Dosyaların değişiklik geçmişini tutan sistem; commit bir kayıt noktasıdır. | Oyundaki "kayıt noktası": istediğin ana geri dönebilirsin.
+- Repo (depo) | github,repo | Bir projenin tüm dosyalarını ve geçmişini tutan klasör. | Projenin arşiv dolabı.
+- Markdown | .md | Başlık, madde ve tabloyu düz yazıyla işaretleyen metin biçimi. | Not defterine işaretlerle biçim vermek.
+- JSON | .json | Veriyi anahtar–değer çiftleriyle düz metin olarak saklama biçimi. | Etiketli çekmecelerden oluşan dolap.
+- Node.js | .mjs,node ,package.json | JavaScript'i tarayıcı dışında, bilgisayarda çalıştıran program. | Tarayıcıdaki motoru söküp bilgisayara takmak.
+- npm / paket | npm ,npx ,package.json,node_modules | Başkalarının yazdığı hazır kod parçalarını (paket) indirip kuran araç. | Hazır yapı malzemesi satan hırdavatçı.
+- Build (derleme/paketleme) | build,derle | Kaynak dosyalardan yayınlanacak son halin üretilmesi. | Hamuru fırına verip ekmeğe çevirmek.
+- API | api,fetch(,endpoint | Bir programın başka programa veri sorduğu kapı. | Lokantada garson: istersin, mutfaktan getirir.
+- Scraping (veri kazıma) | scrape,scraping,cheerio,puppeteer | Bir web sitesindeki bilgiyi program ile sayfadan okuyup toplamak. | Gazetedeki tabloyu elle değil makineyle defterine geçirmek.
+- Offline-first | offline,çevrimdışı,internetsiz | Önce internetsiz çalışacak şekilde tasarlamak; internet varsa yalnız güncelleme için kullanmak. | Erzakı evde tutmak; market açıksa sadece tazelemek.
+- Lisans | license,lisans,cc-by,mit license | Bir eserin/kodun nasıl kullanılabileceğini belirleyen izin metni. | Kiralık evin sözleşmesi: neyi yapabileceğini yazar.
+- CC-BY | cc-by,geonames | Kaynak gösterilirse serbestçe kullanılabilen açık lisans türü. | "Kullan ama adımı an" şartlı hediye.
+- Önbellek (cache) | cache,önbellek | Sık kullanılan veriyi tekrar indirmemek için yakında saklamak. | Mutfak tezgâhında tutulan tuzluk; her seferinde kilere gitmemek.
+- Sürüm (versiyon) | version,sürüm,v1. | Yazılımın belirli bir anki hali, numara/tarihle işaretlenir. | Kitabın baskı numarası.

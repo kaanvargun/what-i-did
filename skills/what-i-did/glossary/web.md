@@ -1,0 +1,22 @@
+# web
+- HTML | .html | Web sayfasının iskeleti: başlık, metin, kutular. | Evin duvarları ve odaları.
+- CSS | .css | Sayfanın görünüşü: renk, yazı tipi, yerleşim. | Evin boyası ve mobilya düzeni.
+- JavaScript (JS) | .js,.mjs | Sayfaya davranış kazandıran programlama dili: saat, buton, hesap. | Evin elektrik tesisatı: her şeyi çalıştıran kısım.
+- TypeScript | .ts,.tsx | Türleri denetlenen JavaScript; derlenince JS olur. | Kontrol listesiyle yazılmış JavaScript.
+- Tarayıcı | chrome,chromium,firefox,safari,tarayıcı | Web sayfalarını açıp çalıştıran program. | Sayfayı okuyan ve oynatan oynatıcı.
+- Service worker | sw.js,serviceworker,service worker | Sayfa adına arka planda çalışıp dosyaları saklayan ve internetsiz açılmasını sağlayan küçük program. | Kapıdaki görevli: internet yoksa depodan getirir.
+- localStorage | localstorage | Tarayıcının o cihazda sakladığı küçük ayar deposu; başka cihaza gitmez. | Cihazın kendi çekmecesi.
+- PWA | manifest.json,webmanifest,pwa | Ana ekrana eklenip uygulama gibi açılan web sitesi. | Kılık değiştirmiş web sitesi.
+- Deploy (yayınlama) | deploy,wrangler,netlify,vercel,yayınla | Dosyaları internetteki sunucuya koyup herkese açmak. | Basılan kitabı rafa dizmek.
+- Cloudflare Workers | wrangler,cloudflare,workers | Cloudflare'in dünyaya yayılmış sunucularında site/kod barındırma hizmeti. | Her şehirde şubesi olan depo.
+- CDN | cdn,jsdelivr,unpkg,cdnjs | Dosyaları kullanıcıya en yakın sunucudan veren dağıtım ağı. | Ürünü en yakın şubeden teslim eden kargo.
+- Alan adı / DNS | dns,domain,alan adı | İsim (vargun.net gibi) ile sunucu adresini eşleyen sistem. | İnternetin telefon rehberi.
+- Statik site | statik site,static site | Sunucuda program çalışmayan, hazır dosyalardan oluşan site. | Basılı broşür: herkese aynı sayfa.
+- Fetch / AJAX | fetch( | Sayfa açıkken arka planda veri isteme. | Sayfa kapanmadan garsona ek sipariş vermek.
+- Font (yazı tipi) | .woff2,.woff,.ttf,.otf | Harflerin çizim dosyası. | Matbaanın harf kalıpları.
+- SVG | .svg | Büyütünce bozulmayan, çizgi tarifinden oluşan resim biçimi. | Fotoğraf değil, çizim talimatı.
+- Puppeteer | puppeteer | Tarayıcıyı programla yöneten araç; ekran görüntüsü, test için. | Tarayıcıyı ipe bağlayıp oynatan kuklacı.
+- URL parametresi | urlsearchparams,?t= | Adresin sonuna eklenen ?anahtar=değer ayarları. | Siparişe eklenen not: "acısız olsun".
+- Saat dilimi (Intl) | intl.datetimeformat,timezone,europe/ | Tarayıcının bölgeye göre saat ve yaz/kış saati hesabı. | Duvardaki dünya saatleri.
+- Yerel sunucu / localhost | localhost,127.0.0.1,http.server | Bilgisayarın kendi içinde çalışan, dışarı açık olmayan web sunucusu. | Evin içindeki dahili telefon.
+- Port | port ,:8080,:3000,:8780 | Bir bilgisayarda hangi programa bağlanılacağını belirten numara. | Apartmandaki daire numarası.

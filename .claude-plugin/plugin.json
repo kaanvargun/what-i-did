@@ -1,0 +1,10 @@
+{
+  "name": "what-i-did",
+  "version": "0.1.0",
+  "description": "Proje bitince köke WHAT-I-DID.md yazar: ne yapıldı, nasıl çalışıyor, dosya haritası, kavram sözlüğü, dürüst sınırlar. Token dostu: bilgiyi yerel script toplar.",
+  "author": { "name": "Vargun Studio" },
+  "homepage": "https://github.com/kaanvargun/what-i-did",
+  "repository": "https://github.com/kaanvargun/what-i-did",
+  "license": "MIT",
+  "keywords": ["documentation", "explain", "handover", "turkish"]
+}

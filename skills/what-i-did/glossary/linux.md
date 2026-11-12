@@ -1,0 +1,22 @@
+# linux / cihaz
+- Linux | linux,/etc/,/usr/,/opt/ | Ücretsiz, açık kaynak işletim sistemi ailesi. | Windows'un özgür akrabası.
+- Debian | debian,apt-get,apt install | Kararlılığıyla bilinen bir Linux dağıtımı; Raspberry Pi OS da ondan türer. | Linux ailesinin sağlam büyük ağabeyi.
+- Raspberry Pi | raspberry,raspi,rpi | Kredi kartı boyutunda, ucuz küçük bilgisayar. | Avuç içi masaüstü bilgisayar.
+- Bash | bash,#!/bin/sh,.sh | Linux'ta komut yazılan kabuk ve onun betik dili. | Linux'un konuşma dili.
+- sudo / root | sudo,(id -u),root yetki | Yönetici yetkisiyle komut çalıştırma. | Binanın ana anahtarı.
+- curl | curl ,curl -,wget | İnternetten dosya indiren komut. | Komutla çalışan indirme düğmesi.
+- systemd / servis | systemd,systemctl,.service | Linux'ta programları açılışta başlatıp çökünce yeniden açan yönetici. | Sabah ışıkları açan, arıza olunca sigortayı kaldıran kapıcı.
+- Zamanlayıcı (timer/cron) | .timer,cron,oncalendar | Belirli saatte bir işi kendiliğinden çalıştırma. | Kurulu çalar saat.
+- Kiosk modu | kiosk | Tarayıcının çerçevesiz, tam ekran ve kapatılamaz açılması. | Sadece bir iş yapan bilet makinesi ekranı.
+- Autostart | autostart,.desktop | Masaüstü oturumu açılınca programı kendiliğinden başlatma. | Kapı açılınca yanan ışık.
+- Symlink (sembolik bağ) | ln -s,ln -sfn,symlink | Başka bir dosyaya/klasöre işaret eden kısayol. | Masaüstündeki kısayol simgesi.
+- tar.gz | tar.gz,tar -x,tar -c,.tgz | Birçok dosyayı tek pakette toplayıp sıkıştıran arşiv biçimi. | Vakumlu valiz.
+- SSH / scp | ssh ,scp ,openssh | Başka bilgisayara ağ üzerinden güvenli bağlanıp komut verme / dosya kopyalama. | Uzaktan kumandalı klavye.
+- Proxmox | proxmox | Bir fiziksel sunucuda birçok sanal makine/konteyner çalıştıran yönetim sistemi. | Bir binayı daire dairelere bölen yönetim.
+- LXC (konteyner) | lxc | Aynı çekirdeği paylaşan, hafif, yalıtılmış Linux ortamı. | Aynı binadaki ayrı daire: ortak tesisat, ayrı kapı.
+- NTP | ntp,timedatectl,timesyncd,chrony | Cihaz saatini internetten doğru saate eşitleme. | Saati radyodaki saat ayarına göre düzeltmek.
+- RTC (gerçek zaman saati) | rtc,hwclock | Cihaz kapalıyken de saati tutan pilli küçük saat; Raspberry Pi'lerin çoğunda yoktur. | Elektrik gidince de çalışan pilli duvar saati.
+- Wi-Fi / NetworkManager | nmcli,networkmanager,wpa_supplicant,psk | Kablosuz ağ bağlantısı ve onu yöneten Linux aracı. | Evdeki görünmez kablo ve santrali.
+- Wayland / X11 | wayland,labwc,wayfire,xset,x11 | Linux'ta ekrana pencere çizen grafik sistemleri (yeni / eski). | Sahne ve sahne amiri.
+- Ekran koruyucu / blanking | blanking,dpms,xset s | Bir süre sonra ekranın kararması özelliği. | Kendiliğinden kısılan lamba.
+- Ortam değişkeni | process.env,$env:,environment variable,ortam değişkeni | Programlara verilen isimli ayar değeri. | Kapıya asılı not: "anahtar paspasın altında".

@@ -1,0 +1,11 @@
+{
+  "name": "what-i-did-yerel",
+  "owner": { "name": "Vargun Studio" },
+  "plugins": [
+    {
+      "name": "what-i-did",
+      "source": "./",
+      "description": "Proje bitince WHAT-I-DID.md üretir (token dostu)."
+    }
+  ]
+}

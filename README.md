@@ -7,17 +7,17 @@ başkasına eksiksiz, doğru terimlerle ve dürüstçe anlatabilsin.
 Terminalde (ya da Claude Code içinde başına `/` koyarak):
 ```bash
 claude plugin marketplace add kaanvargun/what-i-did
-claude plugin install what-i-did@what-i-did-yerel
+claude plugin install what-i-did@what-i-did
 ```
 Yeni oturum aç, `/what-i-did` yaz. Varsayılan kurulum bu bilgisayardaki tüm projelerde geçerlidir;
 yalnız bir proje için `--scope project` ekle.
 
 Kaldırma:
 ```bash
-claude plugin uninstall what-i-did@what-i-did-yerel
-claude plugin marketplace remove what-i-did-yerel
+claude plugin uninstall what-i-did@what-i-did
+claude plugin marketplace remove what-i-did
 ```
-Güncelleme: `claude plugin marketplace update what-i-did-yerel`
+Güncelleme: `claude plugin marketplace update what-i-did`
 
 Yerel klasörden kurmak için `marketplace add` komutuna GitHub adı yerine klasör yolunu ver.
 

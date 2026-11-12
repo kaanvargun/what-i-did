@@ -5,7 +5,7 @@
     {
       "name": "what-i-did",
       "source": "./",
-      "description": "Proje bitince WHAT-I-DID.md üretir (token dostu)."
+      "description": "Writes WHAT-I-DID.md for any finished project (token-light)."
     }
   ]
 }

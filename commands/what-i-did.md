@@ -1,5 +1,5 @@
 ---
-description: Proje köküne WHAT-I-DID.md yaz ya da güncelle (projeyi başkasına anlatma belgesi)
-argument-hint: "[klasör] [--dil=en] [--kisa]"
+description: Write or update WHAT-I-DID.md in the project root (explain the project to others)
+argument-hint: "[folder] [--dil=en|tr|...] [--kisa]"
 ---
-`what-i-did` skill'ini çalıştır ve talimatına birebir uy. Argümanlar: $ARGUMENTS
+Run the `what-i-did` skill and follow it exactly. Arguments: $ARGUMENTS

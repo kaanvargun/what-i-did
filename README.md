@@ -1,75 +1,83 @@
 # what-i-did
+> [Türkçe](README.tr.md)
 
-Claude Code plugin'i. Proje bitince köke **WHAT-I-DID.md** yazar: teknik bilgisi az biri projeyi
-başkasına eksiksiz, doğru terimlerle ve dürüstçe anlatabilsin.
+A Claude Code plugin that writes **WHAT-I-DID.md** to your project root when a project is done, so that
+someone with little technical background can explain the project to others: completely, with the right
+terms, and honestly. Works for web apps, game ports, APK modding, reverse engineering, Raspberry Pi /
+device setups and more.
 
-## Kurulum
-Terminalde (ya da Claude Code içinde başına `/` koyarak):
+## Install
+In a terminal (or inside Claude Code with a leading `/`):
 ```bash
 claude plugin marketplace add kaanvargun/what-i-did
 claude plugin install what-i-did@what-i-did
 ```
-Yeni oturum aç, `/what-i-did` yaz. Varsayılan kurulum bu bilgisayardaki tüm projelerde geçerlidir;
-yalnız bir proje için `--scope project` ekle.
+Open a new session and type `/what-i-did`. By default the plugin is active in every project on this
+computer; add `--scope project` to enable it for one project only.
 
-Kaldırma:
+Uninstall:
 ```bash
 claude plugin uninstall what-i-did@what-i-did
 claude plugin marketplace remove what-i-did
 ```
-Güncelleme: `claude plugin marketplace update what-i-did`
+Update: `claude plugin marketplace update what-i-did`
 
-Yerel klasörden kurmak için `marketplace add` komutuna GitHub adı yerine klasör yolunu ver.
-
-## Kullanım
+## Usage
 ```
-/what-i-did                 # çalışma klasörü
-/what-i-did apps/Proje      # başka klasör
-/what-i-did --dil=en        # İngilizce
-/what-i-did --kisa          # çok büyük projede daha az not oku
+/what-i-did                 # current folder
+/what-i-did apps/MyProject  # another folder
+/what-i-did --dil=tr        # force a language (default: the language you talk to Claude in)
+/what-i-did --kisa          # read fewer notes on very large projects
 ```
-Dosya zaten varsa baştan yazılmaz; yalnız son yazımdan sonra değişen kısımlar güncellenir.
+If WHAT-I-DID.md already exists it is not rewritten; only sections affected by files changed since the
+last write are updated.
 
-## Belge bölümleri (sabit sıra)
-1 Tek cümlede · 2 Ne yaptık · 3 Nasıl çalışıyor (şema) · 4 Dosya haritası · 5 Baştan sona akış ·
-6 Kavram sözlüğü (yalnız projede geçenler) · 7 Sorulabilecek sorular · 8 Dürüst sınırlar (zorunlu:
-yapay zekâ ile yapıldığı, test edilmeyenler, tahmini kısımlar) · 9 Kaynaklar ve lisanslar · 10 Komutlar
+## Document sections (fixed order)
+1 In one sentence · 2 What we built · 3 How it works (diagram) · 4 File map · 5 End-to-end flow ·
+6 Glossary (only terms used in the project) · 7 Likely questions and answers · 8 Honest limits
+(mandatory: built with AI / Claude Code and the user's role, what was not tested, what is estimated) ·
+9 Sources and licenses · 10 Commands (rebuild / publish)
 
-## Token tasarrufu (neden ucuz?)
-- Model kodu **okumaz**. `skills/what-i-did/scripts/ozet.mjs` bilgisayarda (token harcamadan) klasörü tarar
-  ve tek, kısa bir özet verir: tür tahmini, git geçmişi, TODO/CLAUDE/MAP/README notları, toplanmış dosya ağacı,
-  lisans dosyaları ve **yalnız projede geçen** sözlük terimleri.
-- Sözlük dosyalarının tamamı modele gitmez; script eşleşen satırları seçer.
-- Model yalnız ilgili şablonu okur (web, cihaz, apk, re, oyun).
-- Güncellemede tüm belge yeniden yazılmaz, yalnız etkilenen bölümler düzenlenir.
-- Oturum başına sabit maliyet: yalnız skill'in tek satırlık açıklaması. Hook varsayılan kapalı.
-- Yaklaşık maliyet (Vakit Ekranı, ~1300 dosya): özet çıktısı ~16 KB; asıl maliyet belgenin kendisini yazmak.
+## Why it is cheap on tokens
+- The model does **not** read your code. `skills/what-i-did/scripts/ozet.mjs` scans the folder locally
+  (no tokens) and prints one short digest: project type guess, git history, TODO/CLAUDE/MAP/README notes,
+  a collapsed file tree, license files, and **only the glossary entries that match the project**.
+- The glossary files are never sent whole; the script picks matching lines.
+- Only the relevant project-type template is read (web, cihaz = device, apk, re, oyun = game).
+- Updates edit only the affected sections.
+- Fixed cost per session: the skill's one-line description. The hook is off by default.
+- Example: a ~1300-file project produced a ~16 KB digest; the main cost is writing the document itself.
 
-## İsteğe bağlı hatırlatma (varsayılan KAPALI)
-Oturumda dosya düzenlendiyse, oturum başına bir kez ekranda tek satır: "WHAT-I-DID güncellensin mi?".
-Modele bir şey gitmez (0 token). Açmak için `~/.claude/settings.json`:
+## Optional reminder (OFF by default)
+If files were edited in a session, shows one line once per session: "WHAT-I-DID güncellensin mi?"
+(update WHAT-I-DID?). Nothing is sent to the model (0 tokens). Enable in `~/.claude/settings.json`:
 ```json
 { "env": { "WHAT_I_DID_HATIRLAT": "1" } }
 ```
 
-## Yapı
+## Layout
 ```
-.claude-plugin/plugin.json        plugin tanımı
-.claude-plugin/marketplace.json   yerel kurulum için katalog
-commands/what-i-did.md            /what-i-did komutu (skill'i çağırır)
-skills/what-i-did/SKILL.md        talimat
-skills/what-i-did/scripts/ozet.mjs  yerel özet çıkarıcı (Node.js gerekir)
-skills/what-i-did/templates/      iskelet + tür şablonları (bölüm ipuçları, SSS)
-skills/what-i-did/glossary/       kavram sözlüğü (genel, web, linux, android, re, oyun)
-hooks/hooks.json, hatirlat.mjs    isteğe bağlı hatırlatma
+.claude-plugin/plugin.json        plugin manifest
+.claude-plugin/marketplace.json   marketplace catalog (install from GitHub or a local folder)
+commands/what-i-did.md            /what-i-did command (calls the skill)
+skills/what-i-did/SKILL.md        instructions
+skills/what-i-did/scripts/ozet.mjs  local digest builder (needs Node.js)
+skills/what-i-did/templates/      skeleton + per-type templates (section hints, FAQs)
+skills/what-i-did/glossary/       glossary (genel=general, web, linux, android, re, oyun=game)
+hooks/hooks.json, hatirlat.mjs    optional reminder
 ```
+Templates and glossary are written in Turkish; Claude translates them when the document language is
+different. Contributions in other languages are welcome.
 
-## Sözlüğe terim ekleme
-`glossary/<konu>.md` içine bir satır:
+## Adding a glossary term
+One line in `glossary/<topic>.md`:
 ```
-- Terim | anahtar1,anahtar2,.uzanti | 1-2 cümle sade açıklama. | Benzetme.
+- Term | key1,key2,.ext | One or two plain sentences. | Analogy.
 ```
-Anahtar `.` ile başlıyorsa dosya uzantısıdır; diğerleri dosya adı/içeriğinde aranır (küçük harf).
+Keys starting with `.` are file extensions; others are searched (lower-case) in file names and contents.
 
-## Gereksinim
-Node.js 18+ (özet scripti ve hook için).
+## Requirements
+Node.js 18+ (for the digest script and the hook).
+
+## License
+MIT

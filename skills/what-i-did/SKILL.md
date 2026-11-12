@@ -1,6 +1,6 @@
 ---
 name: what-i-did
-description: Proje bitince köke WHAT-I-DID.md yazar/günceller (projeyi birine anlatma belgesi). "/what-i-did", "projeyi anlat", "ne yaptık yaz" denince.
+description: Writes/updates WHAT-I-DID.md in the project root to explain a finished project. Use for "/what-i-did", "explain the project", "projeyi anlat", "ne yaptık yaz".
 ---
 # what-i-did
 
@@ -18,7 +18,7 @@ Ek dosya okuman gerekirse en fazla 2 dosya, yalnız gereken satırlar.
    - VARSA: baştan yazma. Script'in "değişenler" listesine göre yalnız etkilenen bölümleri Edit ile güncelle; en alttaki "Son güncelleme" satırını yenile.
 4. Kavram sözlüğü (6): yalnız script'in verdiği eşleşmeler + oturumda geçen ek terimler. Belgede kullanmadığın terimi koyma.
 5. Dürüst sınırlar (8) ZORUNLU, boş bırakılamaz: yapay zekâ (Claude Code) ile yapıldı + kullanıcının rolü; test EDİLMEYENLER (notlarda "denenmedi" vb. geçenler); tahmini/varsayım kısımlar; bilinen hatalar. Emin olmadığını "doğrulanmadı" diye yaz, uydurma.
-6. Dil: `--dil=` verilmişse o, yoksa kullanıcının konuştuğu dil (varsayılan Türkçe). Sözlük satırlarını gerekirse çevir.
+6. Dil: `--dil=` verilmişse o, yoksa kullanıcının konuştuğu dil (belirsizse İngilizce). Başlıkları, şablonu ve sözlük satırlarını o dile çevir.
 7. Kullanıcıya tek satır: dosya yolu + "doğrulanmadı" diye işaretlenen madde sayısı. Belgeyi sohbete kopyalama.
 
 ## Yazım

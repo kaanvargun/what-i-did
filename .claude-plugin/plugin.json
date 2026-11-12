@@ -1,7 +1,7 @@
 {
   "name": "what-i-did",
   "version": "0.1.0",
-  "description": "Proje bitince köke WHAT-I-DID.md yazar: ne yapıldı, nasıl çalışıyor, dosya haritası, kavram sözlüğü, dürüst sınırlar. Token dostu: bilgiyi yerel script toplar.",
+  "description": "Writes WHAT-I-DID.md when a project is done: what was built, how it works, file map, glossary, honest limits. Token-light: a local script gathers the facts.",
   "author": { "name": "Vargun Studio" },
   "homepage": "https://github.com/kaanvargun/what-i-did",
   "repository": "https://github.com/kaanvargun/what-i-did",
